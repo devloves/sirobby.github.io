@@ -37,10 +37,18 @@ div {
     <div id="projects"><a href="https://discord.gg/eXqMgFz">LiteDefender</a><br>
         <a href="
         https://discord.gg/HRPr3eQ">Intellectual Client</a></div>
+
+        <br>
+
+        Discord Username: <span id="disconame"><button onclick="revealname()">Click to reveal</button></span>
 </body>
 </html>
 
 <script>
+function revealname() {
+    document.getElementById("disconame").innerHTML = "Sir Obsidian#2640"
+}
+
     document.getElementById("projects").style.visibility = "hidden"
 
     function viewprojects() {
