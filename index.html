@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.Obsidian | Official Site</title>
+<style>
+body {
+    font-family:'Moon 2.0 Regular';
+}
 
+
+    @font-face {
+font-family: 'Moon 2.0 Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Moon 2.0 Regular'), url('Moon2.0-Regular.woff') format('woff');
+}
+
+div {
+    font-size: 21px
+}
+</style>
+
+</head>
+<body>
+    
+    <img class="middle" src="cod.png">
+    <br>
+    <div>Hello! Im Sir Obsidian!
+    <br>I have a few projects :D</div>
+    
+    <br>
+
+    <button onclick="viewprojects()">Click to view projects.</button>
+
+    <div id="projects"><a href="https://discord.gg/eXqMgFz">LiteDefender</a><br>
+        <a href="
+        https://discord.gg/HRPr3eQ">Intellectual Client</a></div>
+</body>
+</html>
+
+<script>
+    document.getElementById("projects").style.visibility = "hidden"
+
+    function viewprojects() {
+        document.getElementById("projects").style.visibility = "visible"
+    }
+</script>
