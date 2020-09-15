@@ -58,6 +58,33 @@ div {
 </html>
 
 <script>
+						    
+function langen() {
+    document.getElementById("langid").innerHTML = `<button onclick="langsw()">Lang: Swedish</button>`
+
+    document.getElementById("text").innerText = `Hello! Im Sir Obsidian!
+    I have a few projects :D`
+    document.getElementById("discous").innerText = `Discord Username:`
+    document.getElementById("vprojcs").innerText = `Click to view projects.`
+}
+
+function langfi() {
+    document.getElementById("langid").innerHTML = `<button onclick="langen()">Lang: Finnish</button>`
+
+    document.getElementById("text").innerText = `Terve! Olen Sir Obsidian!
+    Mulla on muutama projekti :D`
+    document.getElementById("discous").innerText = `Discord käyttäjänimeni:`
+    document.getElementById("vprojcs").innerText = `Klikkaa katsoaksesi projektini.`
+}
+
+function langsw() {
+    document.getElementById("langid").innerHTML = `<button onclick="langfi()">Lang: Swedish</button>`
+    document.getElementById("text").innerText = `Hejdå! Jag är Sir Obsidian!
+    Jag har några projekt :D`
+    document.getElementById("discous").innerText = `Discord användarnamn:`
+    document.getElementById("vprojcs").innerText = `Klicka för att se projekt.`
+}
+				     
 function revealname() {
     document.getElementById("disconame").innerHTML = "Sir Obsidian#2640"
 }
