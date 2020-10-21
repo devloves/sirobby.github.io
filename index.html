@@ -1,97 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr.Obsidian | Official Site</title>
-<style>
-body {
-    font-family:'Moon 2.0 Regular';
+  <meta charset="utf-8">
+  <title>Concord Bot - Bot of the Future</title>
+  <meta name="description" content="">
+  <meta name="author" content="Devster" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <style>
+	  body {
+  margin: 0;
+  background: rgb(255, 99, 71);
+}
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 48px;
+}
+#overlay2 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
 }
 
-
-    @font-face {
-font-family: 'Moon 2.0 Regular';
-font-style: normal;
-font-weight: normal;
-src: local('Moon 2.0 Regular'), url('Moon2.0-Regular.woff') format('woff');
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
 }
-
-div {
-    font-size: 21px
+p {
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #333333;
 }
-.main {
-    position: absolute;
-
-    top: 15px;
-    left: 15px;
-
-    padding: 5px;
+.header {
+  position: relative;
+  text-align: center;
+  background: #23272A;
+  color: white;
 }
-</style>
-
+.logo {
+  width: 50px;
+  fill: white;
+  padding-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.inner-header {
+  height: 65vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.waves {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+.btn{
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+}
+.content {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  background-color: white;
+}
+#overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+.parallax{
+  background: #7289DA;
+}
+/* Animation */
+.parallax>use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+.parallax>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax>use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax>use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax>use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+  </style>
 </head>
 <body>
-    <main class="main">
-    <a href="https://discord.gg/59QvPw6"><img class="middle" src="cod.png" ></a><br>
-    <br>
-    <div id="text">Hello! Im Sir Obsidian!
-    <br>I have a few projects :D</div>
-    
-    <br>
+<div class="header">
+  <div id="overlay2" onclick="off()" style="font-family: 'Ubuntu', sans-serif;">
+<div id="text" class="d-flex justify-content-space-between">
+  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;margin: 1rem;">
+  <div class="card-header" style="color: tomato"><h4>Lite Defender Anti</h4></div>
+  <div class="card-body">
+    <p class="card-text text-white">blah blah blah. some random shit just to cover up some random shit just to cover up</p>
+    <a style="color: tomato;background: #23272A;" href="https://discord.gg/eXqMgFz" class="btn btn-dark"><i style="color: tomato; margin-right: 5px;" class="fa fa-link"></i>  Link To ></a>
+  </div>
+</div>
+  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;margin: 1rem;">
+  <div class="card-header" style="color: tomato"><h4>Intelectuall Client</h4></div>
+  <div class="card-body">
+    <p class="card-text text-white">blah blah blah. some random shit just to cover up some random shit just to cover up</p>
+    <a style="color: tomato;background: #23272A;" href="https://discord.gg/eXqMgFz" class="btn btn-dark"><i style="color: tomato; margin-right: 5px;" class="fa fa-link"></i>  Link To ></a>
+  </div>
+</div>
+  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;margin: 1rem;">
+  <div class="card-header" style="color: tomato"><h4>Dungeon Game</h4></div>
+  <div class="card-body">
+    <p class="card-text text-white">blah blah blah. some random shit just to cover up some random shit just to cover up</p>
+    <a style="color: tomato;background: #23272A;" href="https://discord.gg/eXqMgFz" class="btn btn-dark"><i style="color: tomato; margin-right: 5px;" class="fa fa-link"></i>  Link To ></a>
+  </div>
+</div>
+</div>
+</div>
+	<div id="overlay">
+		<span class="btn btn-dark" onclick="on()">
+			<i style="color: tomato; margin-right: 5px;" class="fa fa-scroll"></i> Projects
+		</span>
+	</div>
+    <div class="inner-header flex">
+      <img src="https://sirobby.github.io/cod.png" style="padding-right: 5px">
+        <h1>Sir Obsidian</h1>
+    </div>
+    <!--Waves Container-->
+    <div>
+        <svg class="waves" fill="rgb(114,137,218)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255, 99, 71,0.7)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255, 99, 71,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255, 99, 71,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(255, 99, 71)" />
+            </g>
+        </svg>
+    </div>
+    <!--Waves end-->
+    <div class="content flex" style="font-family: 'Ubuntu', sans-serif;color: #fff; background: rgb(255, 99, 71);">
+    <h5 style="color: #fff">2020 | Made By Devster</h5>
+	</div>
+</div>
+</div>
+<script type="text/javascript">
+  function on() {
+  document.getElementById("overlay2").style.display = "block";
+}
 
-    <button onclick="viewprojects()" id="vprojcs">Click to view projects.</button>
-
-    <div id="projects"><a href="https://discord.gg/eXqMgFz">LiteDefender</a><br>
-        <a href="
-        https://discord.gg/HRPr3eQ">Intellectual Client</a><br>
-        <a href="https://sirobby.github.io/dungeongame/index.html">DungeonGAME</a>
-        </div>
-
-        <br>
-
-        <span id="discous">Discord Username:</span> <span id="disconame"><button onclick="revealname()">Click to reveal</button></span>
-<br>
-	<span id="langid"><button onclick="langfi()">Lang: English</button></span>
-    </main>
+function off() {
+  document.getElementById("overlay2").style.display = "none";
+}
+</script>
 </body>
 </html>
-
-<script>
-						    
-function langen() {
-    document.getElementById("langid").innerHTML = `<button onclick="langsw()">Lang: Swedish</button>`
-
-    document.getElementById("text").innerText = `Hello! Im Sir Obsidian!
-    I have a few projects :D`
-    document.getElementById("discous").innerText = `Discord Username:`
-    document.getElementById("vprojcs").innerText = `Click to view projects.`
-}
-
-function langfi() {
-    document.getElementById("langid").innerHTML = `<button onclick="langen()">Lang: Finnish</button>`
-
-    document.getElementById("text").innerText = `Terve! Olen Sir Obsidian!
-    Mulla on muutama projekti :D`
-    document.getElementById("discous").innerText = `Discord käyttäjänimeni:`
-    document.getElementById("vprojcs").innerText = `Klikkaa katsoaksesi projektini.`
-}
-
-function langsw() {
-    document.getElementById("langid").innerHTML = `<button onclick="langfi()">Lang: Swedish</button>`
-    document.getElementById("text").innerText = `Hejdå! Jag är Sir Obsidian!
-    Jag har några projekt :D`
-    document.getElementById("discous").innerText = `Discord användarnamn:`
-    document.getElementById("vprojcs").innerText = `Klicka för att se projekt.`
-}
-				     
-function revealname() {
-    document.getElementById("disconame").innerHTML = "Sir Obsidian#2640"
-}
-
-    document.getElementById("projects").style.visibility = "hidden"
-
-    function viewprojects() {
-        document.getElementById("projects").style.visibility = "visible"
-    }
-</script>
